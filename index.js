@@ -90,6 +90,9 @@ app.post('/user', (req, res) => {
   });
 });
 
+app.put('/user/:id', (req, res) => {
+  
+});
 
 
 mongoose.connect(url, { useNewUrlParser: true, useUnifiedTopology: true })
