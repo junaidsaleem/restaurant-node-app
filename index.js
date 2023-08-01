@@ -45,7 +45,24 @@ const Users = mongoose.model('students', studentsSchema);
 
 
 // Routes
-app.get('/user', (req, res) => {
+app.get('/user', 
+(req,res,next)=>{
+
+  let token = req.headers.authorization;
+  if(token && token==='123456'){
+    next();
+  }else{
+    res.status(401).send(
+      {
+        status: 'error',
+        message: 'Unauthorized',
+      }
+    );
+  }
+
+
+} , 
+(req, res) => {
 
   Users.find().then((students) => {
     let data = students.map((student) => {
@@ -91,7 +108,29 @@ app.post('/user', (req, res) => {
 });
 
 app.put('/user/:id', (req, res) => {
-  
+  let id = req.params.id;
+  let data = req.body;
+  Users.findByIdAndUpdate(id, data,{}).then((student) => {
+    res.status(200).send(
+      {
+        status: 'success',
+        message: 'Hello World!',
+        data: [student],
+      }
+    );
+  });
+});
+
+app.delete('/user/:id', (req, res) => {
+  let id = req.params.id;
+  Users.findByIdAndDelete(id).then(() => {
+    res.status(200).send(
+      {
+        status: 'success',
+        message: 'User Deleted!',
+      }
+    );
+  });
 });
 
 
