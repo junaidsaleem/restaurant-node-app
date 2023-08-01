@@ -25,9 +25,25 @@ const middleware = (req, res, next) => {
     }
 
     //
-    // customers.findOne({ token: token }).then((user) => {
-    //   if(user){
+    customers.findOne({ token: token }).then((user) => {
+      if(user){
         next()
+      }else{
+        return res.status(200).json({
+            status: 'error',
+            message: "You are not authorized",
+        });
+      }
+    }).catch((err) => {
+        return res.status(200).json({
+            status: 'error',
+            message: "You are not authorized",
+        });
+    })
+
+
+
+        
     //   }  
     // }).catch((err) => { 
     //     return res.status(200).json({
