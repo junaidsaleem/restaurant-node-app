@@ -20,23 +20,29 @@ Make sure you have the following installed on your system:
 
 ```bash
 git clone https://github.com/junaidsaleem/DemoNodeApp.git
-
+```
 1. Change to the project directory.
+```bash
     cd DemoNodeApp
-
+```
 2. Install the required dependencies using npm
+ ```bash
     npm install
+```
 
-# Running the Application
-    Start the application by running the following command:
+### Running the Application
+Start the application by running the following command:
+
+    ```bash
     npm start
+    ```
 
     The application should now be running on the specified port (default: 3000).
 
-API Endpoints
-The following API endpoints are available in the DemoNodeApp:
+### API Endpoints
+    The following API endpoints are available in the DemoNodeApp:
 
-Customers API
+    Customers API
 
 GET /api/customers: Get a list of all customers.
 GET /api/customers/:id: Get a specific customer by ID.
@@ -53,14 +59,14 @@ GET /api/albums/:id: Get a specific album by ID.
 POST /api/albums: Create a new album.
 PUT /api/albums/:id: Update an existing album by ID.
 DELETE /api/albums/:id: Delete an album by ID.
-Middlewares
+### Middlewares
 The application includes the following middleware:
 
 authMiddleware: A middleware to authenticate API requests using JWT tokens.
 Formatters
 The application includes formatters to handle request and response data in a consistent format.
 
-Contributing
+### Contributing
 If you'd like to contribute to DemoNodeApp, please follow these steps:
 
 Fork the repository on GitHub.
@@ -70,5 +76,5 @@ Submit a pull request describing the changes you've made.
 License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-Acknowledgments
+### Acknowledgments
 We would like to thank all the contributors and libraries used in this project for their support and efforts.
