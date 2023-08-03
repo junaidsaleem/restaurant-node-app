@@ -44,26 +44,25 @@ The application should now be running on the specified port (default: 3000).
 
     Customers API
 
-GET /api/customers: Get a list of all customers.
-GET /api/customers/:id: Get a specific customer by ID.
-POST /api/customers: Create a new customer.
-PUT /api/customers/:id: Update an existing customer by ID.
-DELETE /api/customers/:id: Delete a customer by ID.
-Authentication (Login) API
+        GET /api/customers: Get a list of all customers.
+        GET /api/customers/:id: Get a specific customer by ID.
+        POST /api/customers: Create a new customer.
+        PUT /api/customers/:id: Update an existing customer by ID.
+        DELETE /api/customers/:id: Delete a customer by ID.
+    Authentication (Login) API
 
-POST /api/login: Authenticate a user and generate a JWT token.
-Albums API
+        POST /api/login: Authenticate a user and generate a JWT token.
+    Albums API
 
-GET /api/albums: Get a list of all albums.
-GET /api/albums/:id: Get a specific album by ID.
-POST /api/albums: Create a new album.
-PUT /api/albums/:id: Update an existing album by ID.
-DELETE /api/albums/:id: Delete an album by ID.
+        GET /api/albums: Get a list of all albums.
+        GET /api/albums/:id: Get a specific album by ID.
+        POST /api/albums: Create a new album.
+        PUT /api/albums/:id: Update an existing album by ID.
+        DELETE /api/albums/:id: Delete an album by ID.
 ### Middlewares
     The application includes the following middleware:
-
     authMiddleware: A middleware to authenticate API requests using JWT tokens.
-    Formatters
+### Formatters
     The application includes formatters to handle request and response data in a consistent format.
 
 ### Contributing
@@ -77,4 +76,4 @@ DELETE /api/albums/:id: Delete an album by ID.
     This project is licensed under the MIT License - see the LICENSE file for details.
 
 ### Acknowledgments
-We would like to thank all the contributors and libraries used in this project for their support and efforts.
+    We would like to thank all the contributors and libraries used in this project for their support and efforts.
