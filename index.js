@@ -5,20 +5,17 @@
 
 const express = require('express');
 const mongoose = require('mongoose');
-const router = require('./Router/customers');
+const customersRouter = require('./Router/customers');
+const AlbumsRouter = require('./Router/Albums');
 const app = express();
 const port = 3000;
 
-//Check git
 
-
-
-//changed by wania-ashfaq
 
 // Middleware
 app.use(express.json());
 // MongoDB connection URL
-const url = 'mongodb://localhost:27017/bootcamp';
+const url = 'mongodb://localhost:27017/UBIT';
 // Connect to MongoDB
 mongoose.connect(url, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => {
@@ -32,4 +29,5 @@ mongoose.connect(url, { useNewUrlParser: true, useUnifiedTopology: true })
     console.error('Error connecting to MongoDB:', err);
   });
 // Routes
-app.use('/', router);
+app.use('/', customersRouter);
+app.use('/', AlbumsRouter);
