@@ -23,7 +23,6 @@ router.get("/albums", (req, res) => {
     });
 });
 
-// Route to create a new customer
 router.post("/albums", (req, res) => {
   const newAlbum = new Albums(req.body);
   newAlbum
@@ -92,10 +91,10 @@ router.delete("/albums/:id", (req, res) => {
       }
     })
     .catch((err) => {
-      console.error("Error deleting customer:", err);
+      console.error("Error deleting Album:", err);
       res.status(500).json({
         status: "error",
-        message: "Failed to delete customer",
+        message: "Failed to delete Album",
         error: err.message,
       });
     });
