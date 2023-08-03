@@ -3,7 +3,6 @@
 
 
 
-
 const customerFormatter = (customer) => {
     const { _id, name, email, phone } = customer;
   
