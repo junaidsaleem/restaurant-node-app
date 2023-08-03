@@ -85,8 +85,7 @@ router.delete("/albums/:id", (req, res) => {
       } else {
         res.status(200).json({
           status: "success",
-          message: "Album deleted successfully",
-          data: AlbumsFormatter(album),
+          message: "Album deleted successfully"
         });
       }
     })
