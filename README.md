@@ -93,4 +93,4 @@ DemoNodeApp operates under the esteemed MIT License - refer to the [LICENSE](LIC
 
 ### Acknowledgments
 
-We express our profound gratitude to all the contributors and libraries that have contributed to this project, enabling its success and continuous improvement. For inquiries or issues, feel free to contact [your-email@example.com](mailto:junaidsaleem@algomates.com).
+We express our profound gratitude to all the contributors and libraries that have contributed to this project, enabling its success and continuous improvement. For inquiries or issues, feel free to contact [junaidsaleem@algomates.com](mailto:junaidsaleem@algomates.com).
