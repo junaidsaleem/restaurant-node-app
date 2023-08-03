@@ -3,7 +3,7 @@
 
 
 
-const customers = require('../Model/customers');
+const customers = require('../Model/products');
 const { createToken, checkToken  } = require('../Auth');
 const middleware = (req, res, next) => {
 
