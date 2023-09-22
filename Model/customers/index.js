@@ -1,9 +1,4 @@
-
-
-
-
-
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
 
 const customersSchema = new mongoose.Schema(
   {
@@ -30,9 +25,9 @@ const customersSchema = new mongoose.Schema(
     },
     token: {
       type: String,
-    }
+    },
   },
-  { timestamps: true }
-  );
+  { timestamps: true },
+);
 
-  module.exports = mongoose.model('customers', customersSchema);
+module.exports = mongoose.model("customers", customersSchema);
