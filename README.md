@@ -1,4 +1,4 @@
-# DemoNodeApp
+# Restaurant Node App
 
 DemoNodeApp is a sophisticated Node.js application that empowers students to consolidate their work and establish a seamless model-controller link with MongoDB, Express, and Node.js. This cutting-edge application delivers a comprehensive set of APIs for efficient customer management, robust authentication (login), and seamless album handling. To ensure utmost security, the application incorporates formatters and middleware specifically designed to handle JSON Web Tokens (JWT).
 
