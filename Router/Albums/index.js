@@ -74,8 +74,7 @@ router.put("/albums/:id", (req, res) => {
 
 router.delete("/albums/:id", (req, res) => {
   const { id } = req.params;
-  Albums
-    .findByIdAndDelete(id)
+  Albums.findByIdAndDelete(id)
     .then((album) => {
       if (!album) {
         return res.status(404).json({
@@ -85,7 +84,7 @@ router.delete("/albums/:id", (req, res) => {
       } else {
         res.status(200).json({
           status: "success",
-          message: "Album deleted successfully"
+          message: "Album deleted successfully",
         });
       }
     })
